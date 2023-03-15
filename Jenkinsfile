@@ -36,6 +36,6 @@ node{
 	 }
     }
       stage('Docker deployment'){
-      sh 'docker run -d -p 4556:8080 --name tomcatlatest19 naveen/newapp' 
+      sh 'docker run -d -p 4559:8080 --name tomcatlatest19 naveen/newapp' 
       }
     }
