@@ -30,12 +30,12 @@ node{
    }
       stage('Remove Previous Container'){
 	try{
-		sh 'docker rm -f tomcatlatest6'
+		sh 'docker rm -f tomcatlatest18'
 	}catch(error){
 		//  do nothing if there is an exception
 	 }
     }
       stage('Docker deployment'){
-      sh 'docker run -d -p 4555:8080 --name tomcatlatest18 naveen/newapp' 
+      sh 'docker run -d -p 4556:8080 --name tomcatlatest19 naveen/newapp' 
       }
     }
